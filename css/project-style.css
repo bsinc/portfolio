@@ -1,0 +1,118 @@
+main{
+  margin-top: 72px;
+}
+.project-header{
+  height: 280px;
+  padding: 24px;
+  position: relative;
+  border-radius: 4px;
+}
+.project-header.vidao-messenger{
+  background: #39B6D8 url("../img/vidaomessenger/vidao-messenger-banner-full.png") center / cover no-repeat;
+}
+.project-header.vidao-connect{
+  background: #00C853 url("../img/vidaoconnect/vidao-connect-banner-full.png") center / cover no-repeat
+}
+.project-header.plus-one{
+  background: #2979FF url("../img/plusone/plus-one-banner-full.png") center / cover no-repeat;
+}
+.more-work .work-card .overlay,
+.project-header .overlay{
+  opacity: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.0));
+  transition: .1s all ease-in;
+}
+.project-header h1{
+  margin: 0;
+  font-family: 'Zilla Slab', serif;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  color: #fff;
+  z-index: 2;
+}
+section p{
+  margin: 16px 24px;
+  min-width: 200px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.image-row{
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+.image-row img{
+  width: 30%;
+  min-width: 160px;
+  border: 1px solid #e0e0e2;
+  border-radius: 4px;
+  margin: 0 12px 20px 12px;
+}
+.image-full img{
+  width: 100%;
+  min-width: 160px;
+  border: 1px solid #e0e0e2;
+  border-radius: 4px;
+}
+section.links a{
+  margin: 16px 0;
+  font-size: 18px;
+  color: #39b6d8;
+}
+.project h3{
+  text-align: center;
+  font-family: 'Zilla Slab', serif;
+  font-size: 24px;
+  font-weight: 500;
+}
+.more-work .work-card{
+  margin: 0 8px;
+}
+.more-work .work-card.vidao-messenger{
+  background: #39B6D8 url("../img/vidaomessenger/vidao-messenger-banner-medium.png") center / cover no-repeat;
+}
+.more-work .work-card.vidao-connect{
+  background: #00C853 url("../img/vidaoconnect/vidao-connect-banner-medium.png") center / cover no-repeat;
+}
+.more-work .work-card.plus-one{
+  background: #2979FF url("../img/plusone/plus-one-banner-medium.png") center / cover no-repeat;
+}
+.more-work .work-card-info{
+  padding-bottom: 16px;
+}
+
+@media (max-width: 1000px) {
+  .project-header.vidao-messenger{
+    background: #39B6D8 url("../img/vidaomessenger/vidao-messenger-banner-medium.png") center / cover no-repeat;
+  }
+  .project-header.vidao-connect{
+    background: #00C853 url("../img/vidaoconnect/vidao-connect-banner-medium.png") center / cover no-repeat;
+  }
+  .project-header.plus-one{
+    background: #2979FF url("../img/plusone/plus-one-banner-medium.png") center / cover no-repeat;
+  }
+}
+@media (max-width: 540px) {
+  .more-work .work-card .overlay,
+  .project-header .overlay{
+    opacity: 1;
+  }
+  .project-header.vidao-messenger,
+  .more-work .work-card.vidao-messenger{
+    background: #39B6D8 url("../img/vidaomessenger/vidao-messenger-banner-small.png") center / cover no-repeat;
+  }
+  .project-header.vidao-connect,
+  .more-work .work-card.vidao-connect{
+    background: #00C853 url("../img/vidaoconnect/vidao-connect-banner-small.png") center / cover no-repeat;
+  }
+  .project-header.plus-one,
+  .more-work .work-card.plus-one{
+    background: #2979FF url("../img/plusone/plus-one-banner-small.png") center / cover no-repeat;
+  }
+}

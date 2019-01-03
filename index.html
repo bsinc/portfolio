@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-35434139-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-35434139-1');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>Brenda Sinclair | UI/UX Designer</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/layout.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Zilla+Slab:400,500" rel="stylesheet">
+  <link href="fonts/icomoon/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="splash container layout vertical center-center">
+    <div class="splash-container">
+      <div>Hi there, I'm<span>&nbsp;Brenda Sinclair</span>, a</div>
+      <div class="job-container">Designer<div class="dot"></div></div>
+      <div> living in Vancouver, BC.</div>
+    </div>
+  </div>
+  <header>
+    <div class="container layout horizontal center-center">
+      <a href="/" class="flex" alt="Brenda Sinclair Home">
+        <div class="logo-container layout horizontal center flex">
+          <img src="img/logo.png" alt="Brenda Sinclair"/>
+          <h1>Brenda Sinclair</h1>
+        </div>
+      </a>
+      <nav class="layout horizontal center-center flex">
+        <a href="#" class="layout horizontal center-center" id="about-nav" alt="About">
+          <span>About</span>
+        </a>
+        <a href="#" class="layout horizontal center-center" id="work-nav" alt="Work">
+          <span>Work</span>
+        </a>
+        <a href="#" class="layout horizontal center-center" id="contact-nav" alt="Contact">
+          <span>Contact</span>
+        </a>
+      </nav>
+      <div class="flex" id="flex-div"></div>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="container layout vertical center-center">
+      <p>With over 3 years of professional UI/UX design experience, I’m looking for a new full-time career opportunity to expand my knowledge even further and unleash everything I’ve learned onto new and exciting projects.</p>
+    </section>
+    <section id="work" class="container">
+      <a href="project-plus-one.html" class="flex" alt="Plus One Project">
+        <div class="work-card plus-one">
+          <div class="overlay"></div>
+          <div class="work-card-info">
+            <p class="work-card-info-title">Plus One</p>
+          </div>
+        </div>
+      </a>
+      <a href="project-vidao-messenger.html" class="flex" alt="Vidao Messenger Project">
+        <div class="work-card vidao-messenger">
+          <div class="overlay"></div>
+          <div class="work-card-info">
+            <p class="work-card-info-title">Vidao Messenger</p>
+          </div>
+        </div>
+      </a>
+      <a href="project-vidao-connect.html" class="flex" alt="Vidao Connect Project">
+        <div class="work-card vidao-connect">
+          <div class="overlay"></div>
+          <div class="work-card-info">
+            <p class="work-card-info-title">Vidao Connect</p>
+          </div>
+        </div>
+      </a>
+    </section>
+  </main>
+  <footer id="contact">
+    <div class="container">
+      <p>Send me a message</p>
+      <a id="email-link" alt="Email Brenda Sinclair" href="mailto:brenda.sinclair@hotmail.com">brenda.sinclair@hotmail.com</a>
+      <br/><br/><br/>
+      <p>Find me on the internet</p>
+      <div class="social-container layout horizontal center">
+        <a href="https://twitter.com/brendasinclair_" alt="Twitter" target="_blank" id="twitter" class="social-button">
+          <i class="icon-twitter"></i>
+        </a>
+        <a href="https://dribbble.com/brendasinclair" alt="Dribbble" target="_blank" id="dribbble" class="social-button">
+          <i class="icon-dribbble"></i>
+        </a>
+        <a href="http://linkedin.com/in/brendasinclair" alt="LinkedIn" target="_blank" id="linkedin" class="social-button">
+          <i class="icon-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    var winHeight = $(window).height();
+
+    $(window).scroll(function(){
+      if ($(window).scrollTop() >= (winHeight - 72)) {
+        $('header').addClass('fixed-nav');
+      }
+      else {
+        $('header').removeClass('fixed-nav');
+      }
+    });
+
+    $("#about-nav").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 72
+        }, 600);
+    });
+
+    $("#work-nav").click(function() {
+        $('html, body').animate({
+            scrollTop: $("#work").offset().top - 72
+        }, 600);
+    });
+
+    $("#contact-nav").click(function() {
+        $('html, body').animate({
+            scrollTop: $("footer").offset().top - 72
+        }, 600);
+    });
+  </script>
+
+</body>
+
+
+
+</html>
