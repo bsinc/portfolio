@@ -16,6 +16,9 @@ main{
 .project-header.plus-one{
   background: #2979FF url("../img/plusone/plus-one-banner-full.png") center / cover no-repeat;
 }
+.project-header.best-buy{
+  background: #003b64 center / cover no-repeat;
+}
 .more-work .work-card .overlay,
 .project-header .overlay{
   opacity: 0;
@@ -37,11 +40,52 @@ main{
   color: #fff;
   z-index: 2;
 }
+.project section h3{
+  text-align: left;
+}
 section p{
-  margin: 16px 24px;
+  margin: 16px 0;
   min-width: 200px;
   font-size: 18px;
   line-height: 26px;
+}
+.project-nav-block{
+  height: 180px;
+  background: #f5f5f7;
+  border-radius: 4px;
+  margin-right: 16px;
+  padding: 16px 24px;
+  box-shadow: 0 .5px 0 rgba(0,0,0,.18);
+  transition: .24s all ease;
+}
+.project-nav-block:last-of-type{
+  margin-right: 0;
+}
+.project-nav-block:hover{
+  box-shadow: 0 19px 38px rgba(0,0,0,.18);
+}
+.project-nav-block h4{
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+.bb-img-row img{
+  max-width: 592px;
+  width: 49%;
+  min-width: 360px;
+  margin-bottom: 16px;
+}
+.img-columns > div{
+  width: 48%;
+  text-align: center;
+}
+.img-columns > div h4{
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.img-columns > div img{
+  width: 100%;
 }
 .image-row{
   overflow-x: auto;
@@ -67,7 +111,6 @@ section.links a{
 }
 .project h3{
   text-align: center;
-  font-family: 'Zilla Slab', serif;
   font-size: 24px;
   font-weight: 500;
 }

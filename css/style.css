@@ -11,6 +11,9 @@ body{
 section{
   padding-top: 96px;
 }
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Zilla Slab', serif;
+}
 a, a:visited, a:hover{
   color: #000000;
   text-decoration: none;
@@ -40,7 +43,7 @@ a, a:visited, a:hover{
   display: inline;
   position: relative;
   margin: 0 3px;
-  padding: 1px 0;
+  padding: 1px 1px 1px 0;
   border: 1px solid #078CE6;
   line-height: 1.2em;
 }
@@ -178,6 +181,9 @@ header nav a:hover{
 }
 .work-card.plus-one{
   background: #2979FF url("../img/plusone/plus-one-banner-full.png") center / cover no-repeat;
+}
+.work-card.best-buy{
+  background: #003b64 center / cover no-repeat;
 }
 .work-card:hover{
   box-shadow: 0 19px 38px rgba(0,0,0,.18);
