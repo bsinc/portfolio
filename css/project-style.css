@@ -69,11 +69,37 @@ section p{
   font-size: 18px;
   margin: 0;
 }
+.img-txt-column p{
+  min-width: 312px;
+  padding-right: 16px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 140px 500px 166px 260px;
+}
+
+.txt1 { grid-area: 1 / 1 / 2 / 2; }
+
+.img1 { grid-area: 1 / 2 / 3 / 3; }
+
+.img2 { grid-area: 2 / 1 / 4 / 2; }
+
+.txt2 { grid-area: 3 / 2 / 4 / 3; }
+
+
+.grid-container img{
+  width: 80%;
+}
+
 .bb-img-row img{
   max-width: 592px;
   width: 49%;
   min-width: 360px;
   margin-bottom: 16px;
+  border: 1px solid #f2f2f4;
+  border-radius: 4px;
 }
 .img-columns > div{
   width: 48%;
@@ -86,6 +112,8 @@ section p{
 }
 .img-columns > div img{
   width: 100%;
+  border: 1px solid #f2f2f4;
+  border-radius: 4px;
 }
 .image-row{
   overflow-x: auto;
@@ -104,10 +132,9 @@ section p{
   border: 1px solid #e0e0e2;
   border-radius: 4px;
 }
-section.links a{
-  margin: 16px 0;
-  font-size: 18px;
-  color: #39b6d8;
+section p a{
+  text-decoration: underline;
+  color: #0070F5!important;
 }
 .project h3{
   text-align: center;
@@ -139,6 +166,17 @@ section.links a{
   }
   .project-header.plus-one{
     background: #2979FF url("../img/plusone/plus-one-banner-medium.png") center / cover no-repeat;
+  }
+  .grid-container{
+    display: block;
+  }
+  .grid-container .img1, .grid-container .img2{
+    width: 49%;
+    display: inline-block;
+    text-align: center;
+  }
+  .grid-container .img1{
+    margin: 32px 0;
   }
 }
 @media (max-width: 540px) {

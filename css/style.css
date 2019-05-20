@@ -146,20 +146,20 @@ header nav a:hover{
   margin: 0 auto;
 }
 #work a, .more-work a{
-  display: block;
-  flex: 1;
+  display: inline-block;
   min-height: 320px;
-  min-width: 220px;
+  min-width: calc(50% - 60px);
   margin-bottom: 60px;
+}
+#work a:nth-child(odd){
+  margin-right: 60px;
 }
 .work-card{
   position: relative;
-  flex: 1;
   height: 320px;
-  min-width: 220px;
   border-radius: 4px;
   box-shadow: 0 .5px 0 rgba(0,0,0,.18);
-  transition: .24s all ease;
+  transition: .24s box-shadow ease;
   cursor: pointer;
 }
 .work-card .overlay{
@@ -207,6 +207,13 @@ header nav a:hover{
   font-weight: 500;
 }
 @media (max-width: 1000px) {
+  #work a, #work .work-card{
+    min-width: 100%;
+    width: 100%;
+  }
+  #work a:nth-child(odd){
+    margin-right: 0;
+  }
   .work-card.vidao-messenger{
     background: #39B6D8 url("../img/vidaomessenger/vidao-messenger-banner-medium.png") center / cover no-repeat;
   }
