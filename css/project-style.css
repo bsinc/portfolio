@@ -1,4 +1,4 @@
-main{
+.project{
   margin-top: 72px;
 }
 .project-header{
@@ -29,7 +29,6 @@ main{
   bottom: 0;
   right: 0;
   background: linear-gradient(0deg, rgba(0,0,0,.5), rgba(0,0,0,.0));
-  transition: .1s all ease-in;
 }
 .project-header h1{
   margin: 0;
@@ -40,6 +39,10 @@ main{
   color: #fff;
   z-index: 2;
 }
+.project section h2{
+  font-weight: 500;
+  font-size: 32px;
+}
 .project section h3{
   text-align: left;
 }
@@ -49,6 +52,10 @@ section p{
   font-size: 18px;
   line-height: 26px;
 }
+section p a{
+  text-decoration: underline;
+  color: #0070F5!important;
+}
 .project-nav-block{
   height: 180px;
   background: #f5f5f7;
@@ -56,7 +63,7 @@ section p{
   margin-right: 16px;
   padding: 16px 24px;
   box-shadow: 0 .5px 0 rgba(0,0,0,.18);
-  transition: .24s all ease;
+  transition: .24s box-shadow ease;
 }
 .project-nav-block:last-of-type{
   margin-right: 0;
@@ -69,30 +76,13 @@ section p{
   font-size: 18px;
   margin: 0;
 }
+a[href^="#pc-gaming"].project-nav-block{
+  background: #1c262c url('../img/bestbuy/pc-gaming/pc-gaming-nav-block.png') center / cover no-repeat;
+}
 .img-txt-column p{
   min-width: 312px;
   padding-right: 16px;
 }
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 140px 500px 166px 260px;
-}
-
-.txt1 { grid-area: 1 / 1 / 2 / 2; }
-
-.img1 { grid-area: 1 / 2 / 3 / 3; }
-
-.img2 { grid-area: 2 / 1 / 4 / 2; }
-
-.txt2 { grid-area: 3 / 2 / 4 / 3; }
-
-
-.grid-container img{
-  width: 80%;
-}
-
 .bb-img-row img{
   max-width: 592px;
   width: 49%;
@@ -132,9 +122,27 @@ section p{
   border: 1px solid #e0e0e2;
   border-radius: 4px;
 }
-section p a{
-  text-decoration: underline;
-  color: #0070F5!important;
+.bbym-img{
+  height: 200px;
+  min-width: 200px;
+  margin: 0 16px 16px 0;
+  -webkit-flex: 1;
+  flex: 1;
+  background-size: cover;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#best-buy-mobile-redesign .bbym-img:first-of-type{
+  background-image: url('../img/bestbuy/bbym/bbym-wip-list.jpg');
+}
+#best-buy-mobile-redesign .bbym-img:nth-of-type(2){
+  background-image: url('../img/bestbuy/bbym/bbym-wip-stickies.jpg');
+}
+#best-buy-mobile-redesign .bbym-img:nth-of-type(3){
+  background-image: url('../img/bestbuy/bbym/bbym-wip-whiteboard.jpg');
+}
+#best-buy-mobile-redesign .bbym-img:nth-of-type(4){
+  background-image: url('../img/bestbuy/bbym/bbym-wip-wireframe.jpg');
 }
 .project h3{
   text-align: center;
