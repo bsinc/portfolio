@@ -103,6 +103,7 @@ header h1{
 }
 header nav a{
   height: 48px;
+  width: 60px;
   margin: 0 60px;
   font-family: 'Zilla Slab', serif;
   font-size: 16px;
@@ -118,9 +119,6 @@ header nav a:hover{
   header nav a{
     margin: 0 40px;
   }
-  header #flex-div{
-    display: none;
-  }
 }
 @media (max-width: 600px){
   header h1{
@@ -135,9 +133,9 @@ header nav a:hover{
 ******************************************/
 #about p{
   text-align: center;
-  max-width: 600px;
+  max-width: 640px;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 26px;
 }
 /******************************************
                   WORK
@@ -163,10 +161,10 @@ header nav a:hover{
   cursor: pointer;
 }
 .work-card .overlay{
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   z-index: 1;
-  top: 0;
+  top: 60%;
   left: 0;
   bottom: 0;
   right: 0;
@@ -183,7 +181,7 @@ header nav a:hover{
   background: #2979FF url("../img/plusone/plus-one-banner-full.png") center / cover no-repeat;
 }
 .work-card.best-buy{
-  background: #003b64 center / cover no-repeat;
+  background: #39B6D8 url("../img/bestbuy/best-buy-banner.jpg") center / cover no-repeat;
 }
 .work-card:hover{
   box-shadow: 0 19px 38px rgba(0,0,0,.18);
@@ -225,9 +223,6 @@ header nav a:hover{
   }
 }
 @media (max-width: 540px) {
-  .work-card .overlay{
-    opacity: 1;
-  }
   .work-card.vidao-messenger{
     background: #39B6D8 url("../img/vidaomessenger/vidao-messenger-banner-small.png") center / cover no-repeat;
   }
